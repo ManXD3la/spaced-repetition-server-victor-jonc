@@ -28,10 +28,10 @@ VALUES
   (5, 1, 'cuchara', 'spoon', 6),
   (6, 1, 'desarrollador', 'developer', 7),
   (7, 1, 'juego', 'game', 8),
-  (8, 1, 'coche', 'car', 9);
-  (9, 1, 'azul', 'blue', 10);
-  (10, 1, 'casa', 'house', 11);
-  (11, 1, 'ingeniero', 'engineer', 12);
+  (8, 1, 'coche', 'car', 9),
+  (9, 1, 'azul', 'blue', 10),
+  (10, 1, 'casa', 'house', 11),
+  (11, 1, 'ingeniero', 'engineer', 12),
   (12, 1, 'divertido', 'fun', null);
 
 --   crab - cangrejo
@@ -57,6 +57,6 @@ SELECT setval('user_id_seq', (SELECT MAX(id) from "user"));
 
 COMMIT;
 
--- createdb -U dunder_mifflin spaced-repetition
+-- createdb -U dunder-mifflin spaced-repetition
 
--- psql -U dunder_mifflin -d spaced-repetition -f ./seeds/seed.tables.sql
+-- psql -U dunder-mifflin -d spaced-repetition-test -f ./seeds/seed.tables.sql
